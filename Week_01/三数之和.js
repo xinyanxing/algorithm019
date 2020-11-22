@@ -7,10 +7,10 @@
 var threeSum = function (nums) {
     let ans = [];
     const len = nums.length;
-    if (nums === null || len < 3) return ans; //当数组长度为3时 无需循环
+    if (nums === null || len < 3) { return ans }; //当数组长度为3时 无需循环
     nums.sort((a, b) => a - b)  //升序排序
     for (let i = 0; i < len; i++) {
-        if (nums[i] > 0) { break } //结束循环，跳出循环体，执行后面的程序
+        if (nums[i] > 0) { break } //结束循环，跳出循环体，执行后面的程序 // 如果当前数字大于0，则三数之和一定大于0，所以结束循环
         if (i > 0 && nums[i] == nums[i - 1]) continue;//去重 结束本次循环
         let L = i + 1;
         let R = len - 1
