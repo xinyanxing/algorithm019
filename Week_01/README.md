@@ -1,10 +1,8 @@
 
 # week1-学习笔记
-
-
 ### 时间复杂度:
- 
- 常用Big O notation 来进行表示
+
+常用Big O notation 来进行表示
  	
 ####  最常见的时间复杂度	
 - O(1):常数复杂度 			Constant Complexity 
